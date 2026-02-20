@@ -1,0 +1,85 @@
+body {
+    font-family: Arial;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;   /* controls box size */
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input, select {
+    padding: 8px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input,
+select,
+form button {
+    width: 100%;
+    box-sizing: border-box;
+}
+form button {
+    width: 100%;
+    white-space: nowrap;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.actions button {
+    margin-left: 5px;
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .container {
+    background: #1e1e1e;
+}
+
+.dark li {
+    background: #333;
+}
+
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}
