@@ -14,9 +14,6 @@ A responsive web-based expense management application built using HTML, CSS, and
 - CSS3
 - JavaScript (ES6)
 
-## Live Demo
-(Add GitHub Pages link)
-
 ## Learning Outcomes
 - DOM Manipulation
 - Event Handling
